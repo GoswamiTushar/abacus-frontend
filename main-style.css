@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+  transition: all 0.3s ease-out;
+}
+
+:root{
+	--primary-color: #333;
+	--green: #2b6030;
+	--yellow: #F1C40F;
+	--darkblue: rgb(36, 41, 46);
+
+}
+
+body{
+	background:url("../abacus-website/logos/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.font-formatted-light{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+
+.font-formatted-regular{
+	font-family: 'Roboto', sans-serif;
+}
+
+.font-formatted-condensed{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.divider{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 50px;
+    border-top: 2px solid var(--yellow);
+    padding-bottom: 40px;
+}
+
+
+.flex-container{
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+
+}
+
+.navigation-bar{
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: var(--darkblue);
+	height: 130px;
+	border-radius: 10px;
+	position: sticky;
+	margin: 10px;
+	margin-top: 5px;
+	box-shadow: 0px 10px 5px grey;
+ 	position: -webkit-sticky;
+ 	top: 5px;
+ 	justify-content: center;
+ 	/* box-shadow: 0px 10px 0px #dedede; */
+}
+
+
+.navigation-bar ul{
+	list-style-type: none;
+	display: flex;
+}
+
+.navigation-bar a{
+	text-decoration: none;
+	color: var(--green);
+	cursor: pointer;
+}
+
+.logo-and-name{
+	float: left;
+	width: 50%;
+	margin-left: 20px;
+	margin-top: 13px;
+}
+
+.nav-items{
+	float: right;
+	 margin: 0 auto;
+ 	padding: 50px 0;
+}
+
+.nav-items a{
+	text-decoration: none;
+	color: #aaa;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: block;
+	padding: 15px;
+	margin: 0 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-top: none; border-right: none; border-left: none;
+	border-color: var(--yellow);
+}
+
+.nav-items a,
+.nav-items a:after,
+.nav-items a:before {
+  transition: all .5s;
+}
+
+.nav-items a:hover {
+  color: #555;
+  border-bottom: none;
+}
+
+.nav-items a {
+  position:relative;
+  z-index: 1;
+}
+.nav-items a:hover {
+  color: #91640F;
+}
+.nav-items a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: ' ';
+  color: white;
+  /* background: var(--green); */
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 10px;
+}
+.nav-items a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.home-content{
+	height: 300px;
+	/* width: 100vw; */
+	margin: 20px;
+	/* max-width: 100%; */
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+}
+
+.about-us{
+	width: 50%;
+	padding: 20px;
+	justify-content: center;
+}
+
+.connect-with-us{
+	margin-top: 65px;
+	width: 50%;
+	padding: 20px;
+}
+
+.connect-with-us a{
+	text-decoration: none;
+}
+
+.connect-with-us ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between
+
+}
+
+.connect-with-us li{
+	margin: 40px;
+}
+
+.connect-with-us img{
+	width: 50px;
+	height: 50px;
+}
+
+
+.card-shape{
+	border-style: solid;
+	border-color: var(--darkblue);
+	border-radius: 20px;
+	border-width: 10px;
+	margin-top: 65px;
+	margin-right: 120px;
+	background-color: var(--darkblue);
+	color: white;
+	height: 350px;
+}
+.card-shape:hover{
+	box-shadow: 0px 10px 5px var(--yellow);
+
+}
+
+.clubs{
+	text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+  margin: 40px;
+  height: auto;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.grid-item:hover{
+	background-color: var(--yellow);
+	box-shadow: 0px 10px 5px black;
+	border-color: var(--darkblue);
+
+}
+
+
+.profile{
+	display: flex;
+	text-align: center;
+}
+
+.profile .pic img{
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	margin: 60px;
+	padding: 60px;
+}
+
+.profile .description{
+	margin: 30px;
+	padding: 50px;
+	text-align: center;
+	font-size: 25px;
+}
