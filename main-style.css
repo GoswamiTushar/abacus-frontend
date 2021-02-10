@@ -162,7 +162,7 @@ body{
 	margin: 40px;
 	height: auto;
   }
-}
+
 
 .about-us{
 	width: 50%;
@@ -185,10 +185,6 @@ body{
 	margin: 40px;
 }
 
-.connect-with-us img{
-	width: 50px;
-	height: 50px;
-}
 
 
 .card-shape{
@@ -197,7 +193,7 @@ body{
 	border-radius: 20px;
 	border-width: 10px;
 	margin-top: 65px;
-	margin-right: 120px;
+	/* margin-right: 120px; */
 	background-color: var(--darkblue);
 	color: white;
 	height: 350px;
@@ -209,6 +205,16 @@ body{
 
 .clubs{
 	text-align: center;
+}
+
+.grid-container-home{
+	display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto;
+  background-color: transparent;
+  padding: 10px;
+  margin: 40px;
+  height: auto;
 }
 
 .grid-container {
@@ -238,6 +244,24 @@ body{
 
 }
 
+.grid-item-solid {
+  background-color: var(--darkblue);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  height: 500px;
+  border-radius: 20px;
+  color: white;
+}
+
+.grid-item-solid:hover{
+	/* background-color: var(--yellow); */
+	box-shadow: 0px 10px 5px var(--yellow);
+	/* border-color: var(--darkblue); */
+
+}
+
 
 .profile{
 	display: flex;
@@ -258,3 +282,6 @@ body{
 	text-align: center;
 	font-size: 25px;
 }
+
+/* test */
+
