@@ -217,6 +217,7 @@ body{
   padding: 10px;
   margin: 40px;
   height: auto;
+  /* width:100vw; */
 }
 
 .grid-container {
@@ -256,6 +257,7 @@ body{
   height: 500px;
   border-radius: 20px;
   color: white;
+  /* width:50vw; */
 }
 
 .grid-item-solid:hover{
