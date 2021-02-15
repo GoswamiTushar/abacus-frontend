@@ -266,6 +266,24 @@ body{
 
 }
 
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: inherit;
+	align-content: space-between;
+}
+
+.flex-item1{
+	margin:100px;
+	width:30vw;
+	/* padding:100px; */
+}
+
+.flex-item2{
+	margin:100px;
+	width:60vw;
+}
+
 
 .profile{
 	display: flex;
