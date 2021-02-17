@@ -8,6 +8,28 @@
 	<link rel="stylesheet" href="main-style.css">
 	<link rel="icon" href="./logos/abacus-logo.jpeg">
 </head>
+<style>
+	.footer-item {
+		/* background-color: rgba(255, 255, 255, 0.8); */
+		/* border: 1px solid rgba(0, 0, 0, 0.8); */
+		padding: 20px;
+		/* font-size: 30px; */
+		text-align: center;
+		/* height: 500px; */
+		/* border-radius: 20px; */
+		/* width: 50vw ; */
+}
+
+	.footer-item a{
+		text-decoration: none;
+		height:254px;
+		width:904.683px;
+		font-size: 30px;
+		color:var(--yellow);
+		background-color: var(--primarycolor);
+	}
+
+</style>
 <body>
 	<!-- navigation bar -->
 	<section class="navigation-bar font-formatted-regular">
@@ -130,19 +152,23 @@
 	</div>
 </section>
 
-<footer style="background-color: var(--darkblue);border-top: 2px solid var(--yellow);">
-	<h2 class="font-formatted-condensed" style="text-align: center; color:white; font-size: 22px;padding-top: 5px;">CONNECT WITH US</h2><div class="divider"></div>
-	<div class="connect-with-us" style="margin:0; padding:0;">
-	<div class="grid-item-solid" style="height:inherit; border-style:none; width:50vw;">
-	<ul style="width: 90vw; padding: 5vw;">
-		<li style="margin:2px; padding:2px"><img src="./logos/github.png" alt="" width="50px" height="50px"></li>
-		<li style="margin:2px; padding:2px"><img src="./logos/instagram.png" alt="" width="50px" height="50px"></li>
-		<li style="margin:2px; padding:2px"><img src="./logos/linkedin.png" alt="" width="50px" height="50px"></li>
-		<li style="margin:2px; padding:2px"><img src="./logos/telegram.png" alt="" width="50px" height="50px"></li>
-	</ul>
+<footer style="background-color: var(--darkblue);border-top: 2px solid var(--yellow);" class="font-formatted-condensed">
+	<div class="grid-container-home">
+	<div class="footer-item">
+		<h2 style="text-align: center; color: white;">CONNECT WITH US</h2>
+		<div class="divider"></div>
+		<ul style=" padding: 5vw; list-style: none;display: flex; justify-content: space-between;">
+			<li style="margin:2px; padding:2px"><img src="./logos/github.png" alt="" width="50px" height="50px"></li>
+			<li style="margin:2px; padding:2px"><img src="./logos/instagram.png" alt="" width="50px" height="50px"></li>
+			<li style="margin:2px; padding:2px"><img src="./logos/linkedin.png" alt="" width="50px" height="50px"></li>
+			<li style="margin:2px; padding:2px"><img src="./logos/telegram.png" alt="" width="50px" height="50px"></li>
+		</ul>
 	</div>
-	<div style="margin-top:3rem"><h3 style="text-align: center;"><a href="" style="text-decoration: none;color:white" class="font-formatted-regular">JOIN ABACUS</a></h1><div class="divider"></div></div> 
-</div>
+	<div class="footer-item">
+		<h2 style="text-align: center; color: white;">JOIN US</h2>
+		<div class="divider"></div>
+		<a href="#" style=" padding: 5vw;">click here to join</a>
+	</div>
 </footer>
 
 <script src="./scripts/homejs.js"></script>

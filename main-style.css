@@ -15,6 +15,7 @@
 	--yellow: #F1C40F;
 	--darkblue: rgb(36, 41, 46);
 	--blue: rgb(75, 83, 92);
+	--grey: rgb(46, 46, 46);
 
 
 }
@@ -23,6 +24,7 @@ body{
 	background:url("./logos/bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow:var(--darkblue);
 }
 
 .font-formatted-light{
@@ -70,6 +72,7 @@ body{
  	position: -webkit-sticky;
  	top: 5px;
  	justify-content: center;
+	 z-index: 1;
  	/* box-shadow: 0px 10px 0px #dedede; */
 }
 
@@ -235,7 +238,7 @@ body{
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  height: 500px;
+  /* height: 300px; */
   border-radius: 20px;
 }
 
@@ -354,3 +357,41 @@ body{
 }
 
  
+/* test */
+
+.container{
+	width:auto;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.container > img{
+	transition: all 0.8s;
+}
+
+.caption{
+	position: absolute;
+	top:0;
+	left:0;
+	height:0;
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	opacity: 0;
+	transition: all 0.8s;
+	background: rgba(0,0,0,0);
+}
+
+.container:hover .caption{
+	opacity: 1;
+	background: rgba(36, 41, 46,0.7);
+	height:100%;
+}
+
+.container:hover img{
+	transform: rotate(15deg) scale 1.5;
+}
