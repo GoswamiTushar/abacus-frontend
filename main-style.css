@@ -232,6 +232,29 @@ body{
   height: auto;
 }
 
+.grid-container-photos{
+	display: grid;
+  grid-gap: 0px;
+  grid-template-columns: auto auto auto auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+   margin: 40px;
+  height: auto;
+   width:100vw; 
+}
+
+.grid-item-photo {
+	/* background-color: rgba(255, 255, 255, 0.8); */
+	/* border: 1px solid rgba(0, 0, 0, 0.8); */
+	/* padding: 20px; */
+	/* font-size: 30px; */
+	text-align: center;
+	/* height: 300px; */
+	/* border-radius: 20px; */
+  }
+
+  
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -254,7 +277,6 @@ body{
   background-color: var(--darkblue);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
-  font-size: 30px;
   text-align: center;
   height: 500px;
   border-radius: 20px;
@@ -340,7 +362,10 @@ body{
 	/* border-radius: 20px; */
 	display: grid;
 	grid-template-columns: auto auto;
+	/* position: absolute; */
  }
+
+
 
  .member ~ .card-shape:hover{
 	background-color: var(--yellow);

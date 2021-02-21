@@ -1,5 +1,8 @@
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
   
+var previousButton = document.querySelector('#previous');
+var nextButton = document.querySelector('#next');
+
 // Apply to all slideshows that you define with the markup wrote
 slideshows.forEach(initSlideShow);
 
