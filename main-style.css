@@ -456,9 +456,9 @@ nav{
 
 @media only screen and (max-width:1412px){
 	
-	/* .navigation-bar{
-		height: auto;
-	} */
+	.navigation-bar{
+		/* position:fixed; */
+	}
 
 	nav{
 		flex-direction: column;
