@@ -4,6 +4,12 @@ var previousButton = document.querySelector('#previous');
 var nextButton = document.querySelector('#next');
 
 var scale = 'scale(1)';
+
+var burger = document.querySelector('.burger');
+var navbar = document.querySelector('.navigation-bar');
+var navItems = document.querySelector('.nav-items');
+
+
 document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
 document.body.style.msTransform =   scale;       // IE 9
 document.body.style.transform = scale; 
@@ -31,10 +37,6 @@ function initSlideShow(slideshow) {
 
   }, time);
 }
-
-burger = document.querySelector('.burger');
-navbar = document.querySelector('.navigation-bar');
-navItems = document.querySelector('.nav-items');
 
 
 burger.addEventListener('click', ()=>{
