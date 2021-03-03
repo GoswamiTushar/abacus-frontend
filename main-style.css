@@ -470,7 +470,6 @@ nav{
 		margin:auto;
 	}
 	.nav-items ul{
-		margin-top:1.3rem;
 		display: flex;
 		/* transition: all 0.7s ease-out; */
 		flex-direction: column;
@@ -478,7 +477,7 @@ nav{
 
 	.nav-items ul li{
 		/* transition: all 0.7s ease-out; */
-		margin:2rem
+		margin:1rem
 	}
 
 	.burger{

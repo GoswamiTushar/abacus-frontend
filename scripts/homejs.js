@@ -3,6 +3,11 @@ var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 var previousButton = document.querySelector('#previous');
 var nextButton = document.querySelector('#next');
 
+var scale = 'scale(1)';
+document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+document.body.style.msTransform =   scale;       // IE 9
+document.body.style.transform = scale; 
+
 // Apply to all slideshows that you define with the markup wrote
 slideshows.forEach(initSlideShow);
 
@@ -10,7 +15,7 @@ function initSlideShow(slideshow) {
 
   var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
 
-  var index = 0, time = 5000;
+  var index = 0, time = 2000;
   slides[index].classList.add('active');  
   
   setInterval( () => {
